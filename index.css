@@ -1,0 +1,102 @@
+/* Ümumi tərzlər */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.logo{
+    height: 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Mərkəzləşdir */
+    align-items: center;
+    background-color: white; /* Navbarın arxa planı */
+    padding: 20px; /* İki tərəfdən də boşluq */
+    position: relative; /* Alt elementlər üçün pozisiyonu tənzimləyin */
+}
+
+.navbar ul {
+    display: flex; /* Flexbox ilə horizontal düzülüş */
+    list-style: none; /* Siyahı işarələrini gizlədir */
+    gap: 30px; /* Elementlər arasında boşluq */
+    margin: 0 20px; /* Sol və sağdan boşluq */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black; /* Mətinin rəngi */
+    font-weight: 600; /* Qalın yazı */
+    padding: 10px 15px; /* İç boşluq */
+    display: block; /* Block element kimi davranır */
+}
+
+/* Hover zamanı arxa planın ağ olması */
+.navbar li:hover > a {
+    background-color: white; /* Hover zamanı arxa plan */
+}
+
+/* Submenu arxa planı */
+.navSubmenu {
+    display: none; /* Başlanğıcda gizli */
+    position: absolute;
+    background-color:   white; /* Submenu arxa planı */
+    list-style: none; /* Siyahı işarələrini gizlədir */
+    padding: 10px 0; /* İç boşluq */
+    border-radius: 4px; /* Künclərin yuvarlaq olması */
+}
+
+.navSubmenu a {
+    padding: 10px 15px; /* İç boşluq */
+    color: black; /* Mətinin rəngi */
+}
+
+/* Submenu bağlantıları hover zamanı arxa plan */
+.navSubmenu a:hover {
+    background-color: lightgray; /* Hover zamanı arxa plan */
+}
+
+/* Buton stili */
+.btnRegister {
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 35px;
+    height: 50px;
+    width: 80px;
+}
+
+.btnRegister a {
+    text-decoration: none;
+    color: white; /* Buton mətininin rəngi */
+    font-weight: 600;
+}
+
+.searchLinks {
+    text-align: center; /* H1 və siyahını mərkəzləşdirir */
+}
+
+.searchLinks h1 {
+    font-size: 50px;
+}
+
+.searchLinks ul {
+    display: flex;
+    justify-content: center; /* Mərkəzləşdirilmiş düzülüş */
+    gap: 30px; /* Elementlər arasında boşluq */
+}
+
+.searchLinks li {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Mərkəzləşdirilmiş düzülüş */
+    gap: 5px;
+}
+
+.searchLinks li img {
+    height: 40px; /* Şəkil ölçüsünü 40px edirik */
+    width: 40px; /* Şəkil ölçüsünü 40px edirik */
+}
