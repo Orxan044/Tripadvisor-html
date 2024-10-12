@@ -1,4 +1,3 @@
-/* Ümumi tərzlər */
 * {
     margin: 0;
     padding: 0;
@@ -8,58 +7,71 @@
 
 .logo{
     height: 40px;
+    margin-right: 200px;
 }
 
 .navbar {
     display: flex;
-    justify-content: center; /* Mərkəzləşdir */
+    justify-content: center; 
     align-items: center;
-    background-color: white; /* Navbarın arxa planı */
-    padding: 20px; /* İki tərəfdən də boşluq */
-    position: relative; /* Alt elementlər üçün pozisiyonu tənzimləyin */
+    background-color: white;
+    padding: 15px;
+    gap: 10px;
 }
 
-.navbar ul {
-    display: flex; /* Flexbox ilə horizontal düzülüş */
-    list-style: none; /* Siyahı işarələrini gizlədir */
-    gap: 30px; /* Elementlər arasında boşluq */
-    margin: 0 20px; /* Sol və sağdan boşluq */
+.nav_menu {
+    display: flex;
+    list-style: none;
+    margin-right: 380px;
+    padding-left: 0;
 }
 
-.navbar a {
+.nav_menu-item {
+    position: relative;
+}
+
+.nav_menu-item a {
     text-decoration: none;
-    color: black; /* Mətinin rəngi */
-    font-weight: 600; /* Qalın yazı */
-    padding: 10px 15px; /* İç boşluq */
-    display: block; /* Block element kimi davranır */
+    color: black;
+    font-weight: 700;
+    padding: 10px 15px;
+    display: block;
 }
 
-/* Hover zamanı arxa planın ağ olması */
-.navbar li:hover > a {
-    background-color: white; /* Hover zamanı arxa plan */
+.nav_menu-item:hover > a {
+    background-color: gray;
+    border-radius: 5px;
 }
 
-/* Submenu arxa planı */
-.navSubmenu {
-    display: none; /* Başlanğıcda gizli */
+.nav_submenu {
+    display: none;
     position: absolute;
-    background-color:   white; /* Submenu arxa planı */
-    list-style: none; /* Siyahı işarələrini gizlədir */
-    padding: 10px 0; /* İç boşluq */
-    border-radius: 4px; /* Künclərin yuvarlaq olması */
+    left: 0;
+    top: 100%;
+    width: 200px;
+    background-color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    border-color: black;
+    list-style-type: none;
+    margin: 0;
 }
 
-.navSubmenu a {
-    padding: 10px 15px; /* İç boşluq */
-    color: black; /* Mətinin rəngi */
+.nav__menu-item:hover .nav__submenu {
+    display: block;
 }
 
-/* Submenu bağlantıları hover zamanı arxa plan */
-.navSubmenu a:hover {
-    background-color: lightgray; /* Hover zamanı arxa plan */
+.nav_submenu-item a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px 15px;
 }
 
-/* Buton stili */
+.nav_submenu-item a:hover {
+    background-color: gray;
+}
+
 .btnRegister {
     background-color: black;
     border: none;
@@ -71,32 +83,138 @@
 
 .btnRegister a {
     text-decoration: none;
-    color: white; /* Buton mətininin rəngi */
+    color: white; 
     font-weight: 600;
 }
 
 .searchLinks {
-    text-align: center; /* H1 və siyahını mərkəzləşdirir */
+    text-align: center; 
 }
 
 .searchLinks h1 {
+    margin-top: 30px;
     font-size: 50px;
+    font-weight: 900;
 }
 
 .searchLinks ul {
+    margin-top: 45px;
     display: flex;
-    justify-content: center; /* Mərkəzləşdirilmiş düzülüş */
-    gap: 30px; /* Elementlər arasında boşluq */
+    justify-content: center; 
+    gap: 30px; 
 }
 
 .searchLinks li {
     display: flex;
     align-items: center;
-    justify-content: center; /* Mərkəzləşdirilmiş düzülüş */
-    gap: 5px;
+    justify-content: center; 
+    gap: 7px;
 }
 
 .searchLinks li img {
-    height: 40px; /* Şəkil ölçüsünü 40px edirik */
-    width: 40px; /* Şəkil ölçüsünü 40px edirik */
+    height: 25px; 
+    width: 25px; 
 }
+
+.searchLinks li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
+.searchLinks .homeA{
+    text-decoration: underline;
+}
+
+.inputContainer input{
+    height: 50px;
+    width: 700px;
+    border-radius: 20px;
+    margin-top: 30px;
+    border-color: 1px solid #808080;
+    color: black;
+    box-shadow: 0 0 5px 3px lightgray;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.inputContainer button{
+    height: 53px;
+    border-radius: 20px;
+    width: 100px;
+    background-color: #34e0a1;
+    border-color: #34e0a1;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.mealLinks{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.mealText {
+    margin-right: 770px;
+    gap: 10px;
+}
+
+.mealImg {
+    display: flex;
+    gap: 10px; 
+}
+
+.mealImg img{
+    border-radius: 5px;
+}
+
+.imageContainer{
+    position: relative;
+}
+
+.textOverlay{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    color: white;
+    font-size: 26px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+
+.travelLinks{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.travelText{
+    margin-right: 770px;
+}
+
+.travelImages{
+    display: flex;
+    gap: 10px;
+}
+
+.travelImg{
+    display: flex;
+    flex-direction: column;
+}
+
+.travelLike img{
+    height: 30px;
+    width: 30px;
+}
+
