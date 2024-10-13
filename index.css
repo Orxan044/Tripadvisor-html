@@ -163,6 +163,11 @@
     gap: 10px;
 }
 
+.mealText h2{
+    margin: 10px 0px;
+
+}
+
 .mealImg {
     display: flex;
     gap: 10px; 
@@ -201,11 +206,19 @@
 
 .travelText{
     margin-right: 770px;
+    margin-top: 30px;
+}
+
+.travelText h3{
+    font-size: 25px;
+    margin: 10px 0px;
+
 }
 
 .travelImages{
     display: flex;
-    gap: 10px;
+    gap: 18px;
+    margin-top: 10px;
 }
 
 .travelImg{
@@ -213,8 +226,176 @@
     flex-direction: column;
 }
 
-.travelLike img{
-    height: 30px;
-    width: 30px;
+.travelImg img
+{
+    border-radius: 10px;
+    height: 270px;
+    width: 400px;
 }
+
+
+.travelBy{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.travelBy span , a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+
+.travelCity{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.travelLike{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.travelLike img{
+    height: 20px;
+    width: 20px;
+}
+
+.travelLikeCount{
+    display: flex;
+    justify-content: center;
+}
+
+
+.travelBy:hover a , .travelCity:hover{
+    text-decoration: underline;
+    color: rgb(76, 76, 76);
+}
+
+
+.bakuLinks {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.bakuText {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bakuImages {
+    display: flex;
+    flex-wrap: wrap; /* Satır dolduğunda bir sonrakine geçilmesini sağlar */
+    gap: 20px; /* Resimler arasında boşluk bırakır */
+    justify-content: space-between; /* Resimleri yatayda eşit dağıtır */
+}
+
+.bakuImg {
+    flex: 1 1 calc(25% - 20px); /* Resimleri aynı genişlikte olacak şekilde ayarlar */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.bakuContainerImg {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bakuContainerImg img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 200px; /* Resimlerin maksimum yüksekliğini belirler */
+    object-fit: cover; /* Resmin konteynıra sığacak şekilde ayarlanmasını sağlar */
+}
+
+.likeIcon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 24px; /* Like ikonunun boyutunu küçülttük */
+    height: 24px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 3px;
+    transition: transform 0.2s;
+}
+
+.likeIcon img {
+    width: 100%;
+    height: 100%;
+}
+
+.likeIcon:hover {
+    transform: scale(1.1);
+}
+
+.bakuImg span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.bakuImg p {
+    margin-top: 5px;
+    color: gray;
+}
+
+
+/* .bakuImages{
+    display: flex;
+    justify-content: center;
+}
+
+.bakuImg{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bakuContainerImg {
+    position: relative;
+    display: inline-block;
+    margin: 4px;
+    height: 100px;
+    width: 200px;
+}
+
+.bakuContainerImg img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.bakuContainerImg a {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 50%;
+    padding: 5px;
+    width: 38px;
+    height: 38px;
+    text-decoration: none;
+}
+
+.bakuContainerImg a img {
+    width: 80%;
+    height: 80%;
+} */
+
+
+
 
